@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const Server = require('../')
+
+const port = process.env.PORT || '8705'
+const filename = process.argv[2]
+
+function usage() {
+  console.log(`
+Usage:
+
+  serve-markdown path/to/file.md
+  `);
+}
+
+if (typeof filename === 'undefined') {
+  console.error("You must include a valid markdown filename as an argument.")
+  usage()
+  process.exit(1)
+}
+
+const server = new Server({
+  filename, port
+})
+
