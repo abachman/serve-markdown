@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Serve a markdown file as HTML, auto-refresh on changes.",
   "main": "index.js",
+  "bin": "./bin/serve-markdown",
+  "main": "./lib/serve-markdown.js",
   "scripts": {
     "test": "gulp test"
   },
