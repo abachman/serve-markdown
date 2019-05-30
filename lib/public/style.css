@@ -957,3 +957,18 @@
 .markdown-body .pl-12 {
   padding-left: 128px!important;
 }
+
+.markdown-body .info {
+  background: #d9edf7;
+  padding: 15px;
+}
+
+.markdown-body .warning {
+  background: #ece2ac;
+  padding: 15px;
+}
+
+.markdown-body .alert {
+  background: #f3c8c8;
+  padding: 15px;
+}
